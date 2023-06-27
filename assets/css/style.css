@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: #0094ff;
+    background-color: #ffffff;
 }
 
 header {
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #ff9035;
+    background-color: #f1be94;
     color: #ffffff;
 }
 
@@ -53,59 +53,114 @@ main {
     display: flex;
 }
 
-.hero {
-    height: 200px;
-    width: 100%;
+p {
+
+    
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+
+
+  .hero {
+    height: 400px;
+    width: 200%;
     object-fit: cover;
     background-image: url("../images/abstract-banner.jpg");
     background-size: cover;
     background-position: center;
 }
-.content {
-    width: 30%;
-    display: inline-block;
-    margin-left: 20px;
-    flex-wrap: wrap;
+
+.recent-photo {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    border: 3px;
+    height:241px;
+    width: 169px;
 }
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #6bc1ff;
+    color: #ffffff;
+    border-right: 10px solid #13293d;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
 .about-me {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0094ff;
-    color: #ffffff;
 }    
 
 .work {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0094ff;
-    color: #ffffff;
 }    
 .contact-me {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0094ff;
-    color: #ffffff;
 }    
 .resume {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0094ff;
-    color: #ffffff;
 }    
 
+.image-1 {
+    background-image: url("../images/mysterious-glowing-galaxy.jpg");
+    height: 200px;
+    background-size: cover; 
+     
+    
 
-}  
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+}
+
+.image-2 {
+    background-image: url("../images/abstract-wavy-background.jpg");
+    height: 200px;
+    
+
+}
+
+.image-3 {
+    background-image: url("../images/colorful-light-painting-with-black-background.jpg");
+    height: 200px;
+
+}
+
+.image-4 {
+    background-image: url("../images/abstract-blurred-multi-colored-background-generative-ai.jpg");
+    height: 200px;
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
   }
