@@ -12,7 +12,9 @@ header {
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f1be94;
-    color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    
 }
 
 header h1 {
@@ -21,12 +23,15 @@ header h1 {
     color: #d9dcd6;
 }
 
+
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+
+    
 }
 
 header nav ul {
@@ -42,18 +47,25 @@ header nav ul li a{
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    
+    text-align: right;
 
 }
   
 header nav ul li a:hover{
     color: #0072bb;
-    transition: .4s;
+  
 }
 main {
     display: flex;
+    flex-wrap: wrap;
 }
 
 p {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    
 
     
 }
@@ -69,11 +81,12 @@ footer {
 
   .hero {
     height: 400px;
-    width: 200%;
+    width: 100%;
     object-fit: cover;
     background-image: url("../images/abstract-banner.jpg");
     background-size: cover;
     background-position: center;
+    flex-wrap: wrap;
 }
 
 .recent-photo {
@@ -86,22 +99,35 @@ footer {
 }
 
 .content {
+    flex: 4;
     width: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #6bc1ff;
-    color: #ffffff;
+    color: #000000;
     border-right: 10px solid #13293d;
+    
 }
 
 .card {
     background-color: #ffffff;
-    padding: 10px;
-    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 400px;
+}
+
+.card header {
     text-align: left;
-    border-style: solid;
-    border-width: 1px;
+
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    ;
 }
 
 
@@ -127,40 +153,13 @@ footer {
     height: 300px;
 }    
 
-.image-1 {
-    background-image: url("../images/mysterious-glowing-galaxy.jpg");
-    height: 200px;
-    background-size: cover; 
-     
-    
 
-}
-
-.image-2 {
-    background-image: url("../images/abstract-wavy-background.jpg");
-    height: 200px;
-    
-
-}
-
-.image-3 {
-    background-image: url("../images/colorful-light-painting-with-black-background.jpg");
-    height: 200px;
-
-}
-
-.image-4 {
-    background-image: url("../images/abstract-blurred-multi-colored-background-generative-ai.jpg");
-    height: 200px;
-
-}
 
 @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
+
+    main,
+    header,
+    nav a {
+        flex-direction: column;
     }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
+}
