@@ -21,8 +21,8 @@ Resizing the page adjusts with a responsive layout.
 
 ## Website Link
 
-https://iqwixn.github.io/horiseon-website-update/
+https://iqwixn.github.io/professional-portfolio-2023/
 
 ## Website screenshot
 
-![Screenshot of Horiseon website](assets/images/portfolio-website-screenshot.jpg)
+![Screenshot of Portfolio website](assets/images/portfolio-website-screenshot.png)
